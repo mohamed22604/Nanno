@@ -6,6 +6,9 @@ from nanno.main import run_agent
 import json
 
 def main():
+
+    
+
     command = sys.argv[1:] if len(sys.argv) > 1 else ["echo", "No command provided"]
 
     command = " ".join(command)
@@ -14,6 +17,10 @@ def main():
 
     output = error_detection(result)
 
+    if result["returncode"] == 0:
+        print(result["stdout"], end="")
+        return
+
     context = build_context(result)
 
     json_context = json.dumps(context)
@@ -21,6 +28,7 @@ def main():
     answer = input("Send context to Agent? [y/n]: ")
 
     agent_context = None
+
     
     if answer.lower() in ("y", "yes"):
         agent_context = run_agent(json_context)

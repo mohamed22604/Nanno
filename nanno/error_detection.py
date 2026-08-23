@@ -8,5 +8,5 @@ def error_detection(output):
     """
     if output["returncode"] != 0:
         return f"Error detected: {output['stderr']}"
-    elif output["returncode"] == 0:
-        return
+
+    

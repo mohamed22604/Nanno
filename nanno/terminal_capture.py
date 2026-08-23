@@ -13,6 +13,7 @@ def capture_terminal_output(command):
         )
 
         return {
+            "command": command,
             "stdout": result.stdout,
             "stderr": result.stderr,
             "returncode": result.returncode

@@ -1,5 +1,5 @@
 name = "mooh"
 
-print(name)
+print(nam)
 
 

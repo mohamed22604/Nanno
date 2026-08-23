@@ -7,6 +7,7 @@ from nanno.system_prompt import system_prompt
 from nanno.database import get_db
 from nanno.database import get_file
 from nanno.database import save_file_content
+from nanno.config import get_api_key
 import os
 
 
@@ -43,7 +44,7 @@ def run_agent(agent_context):
 
     model = ChatOpenRouter(
     model = "meta-llama/llama-3.3-70b-instruct",
-    api_key = os.getenv("OPENROUTER_API_KEY")
+    api_key = get_api_key()
     )
 
     agent = create_agent(
