@@ -1,0 +1,6 @@
+[project]
+name = "nanno"
+version = "0.1.0"
+
+[project.scripts]
+nanno = "nanno.cli:main"

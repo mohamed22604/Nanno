@@ -1,0 +1,5 @@
+name = "mooh"
+
+print(name)
+
+
