@@ -1,39 +1,47 @@
 # Nanno
 
-> An open-source AI-powered debugging assistant for developers.
+> An open-source AI-powered debugging assistant that helps developers understand errors, not just fix them.
 
-Nanno helps developers understand errors instead of just throwing solutions at them.
+Nanno is a CLI tool that analyzes runtime errors and helps developers understand what went wrong, why it happened, and the programming concepts behind it.
 
-When your code fails, Nanno analyzes the error, explains what happened, and helps you understand the underlying programming concept.
+Unlike many AI coding tools that immediately generate a solution, Nanno focuses on something more important:
 
-# Why Nanno?
+**Understanding the problem before jumping to the solution.**
 
-Most AI coding tools immediately generate a fix.
+---
 
-Nanno takes a different approach.
+## Why Nanno?
 
-The goal is not to simply fix your code for you.
+Debugging is one of the most important skills a developer can build.
 
-The goal is to help you understand:
+However, modern AI tools often create a dangerous habit: developers copy a generated fix without understanding the error.
+
+Nanno was created with a different philosophy.
+
+Instead of simply fixing your code, Nanno aims to help you understand:
 
 * What caused the error
 * Why it happened
-* Which programming concept is involved
-* How to think about debugging similar problems
+* What programming concept is involved
+* How to approach similar problems in the future
 
-Nanno is designed to be a debugging companion, not another code generator.
+> **The goal is not just to fix today's error, but to help you become better at debugging tomorrow's.**
 
-# Features
+---
+
+## Features
 
 * 🤖 AI-powered error analysis
 * 🖥️ CLI-first experience
-* 🔍 Captures terminal errors automatically
-* 🧠 Explains the underlying programming concepts
-* 💡 Focuses on understanding instead of blindly fixing code
-* 🔌 Built with an extensible architecture
-* 🌍 Open source and community-driven
+* 🔍 Automatic terminal error capture
+* 🧠 Explains the concepts behind errors
+* 💡 Focuses on learning instead of blindly generating fixes
+* 🔌 Extensible architecture
+* 🌍 Open-source and community-driven
 
-# Installation
+---
+
+## Installation
 
 Install Nanno using pip:
 
@@ -41,100 +49,124 @@ Install Nanno using pip:
 pip install nanno
 ```
 
-# Quick Start
+---
 
-Run your program through Nanno:
+## Quick Start
+
+Run your program with Nanno:
 
 ```bash
 nanno python main.py
 ```
 
-When an error occurs, Nanno captures the terminal output and sends the relevant context to an AI agent for analysis.
+When your program encounters an error, Nanno captures the relevant terminal output and analyzes it using an AI agent.
 
-Instead of simply rewriting your code, Nanno explains what went wrong and helps you understand why.
+Instead of simply rewriting your code, Nanno helps explain what happened and guides you toward understanding the underlying problem.
 
-# Example
+---
 
-Imagine your program produces an error like:
+## Example
+
+Imagine your program returns:
 
 ```text
 NameError: name 'user_name' is not defined
 ```
 
-Nanno can help explain:
+Nanno can help you understand:
 
 * What a `NameError` means
 * Why Python cannot find the variable
-* Variable scope and definition
-* How to approach debugging similar errors
+* Variable definition and scope
+* How to debug similar problems in the future
 
-The goal is learning through debugging.
+The goal is simple:
+
+**Learn through debugging.**
+
+---
 
 # Philosophy
 
-Nanno follows one simple principle:
+Nanno follows one core principle:
 
-> Understanding the error is more valuable than blindly copying the fix.
+> **Understanding an error is more valuable than blindly copying a fix.**
 
-Debugging is one of the most important skills a developer can build.
+AI should not replace the learning process.
 
-Nanno exists to make that learning process easier.
+It should enhance it.
+
+Nanno aims to become a debugging companion that helps developers think, learn, and improve their problem-solving skills.
+
+---
 
 # Project Status
 
-Nanno is currently under active development.
+🚧 **Nanno is actively under development.**
 
-The project is still evolving, and the architecture, features, and supported languages may change.
+The project is still evolving, and its architecture, features, and capabilities will continue to improve.
 
-Feedback, ideas, bug reports, and contributions are welcome.
+Feedback, bug reports, ideas, and contributions are welcome.
+
+---
 
 # Contributing
 
-Nanno is an open-source project, and contributions from the community are welcome.
+Nanno is an open-source project, and contributions from developers around the world are welcome.
 
 You can contribute by:
 
-* Reporting bugs
-* Improving documentation
-* Suggesting new features
-* Improving error analysis
-* Adding support for more languages
-* Improving the CLI experience
-* Opening issues
-* Submitting pull requests
+* 🐛 Reporting bugs
+* 💡 Suggesting new features
+* 📝 Improving documentation
+* 🔍 Improving error analysis
+* 🌐 Adding support for more programming languages
+* 🖥️ Improving the CLI experience
+* 🧠 Improving AI capabilities
+* 🔧 Opening Pull Requests
 
-# How to Contribute
+## How to Contribute
 
 1. Fork the repository
-2. Create a new branch
+
+2. Clone your fork:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/nanno.git
+```
+
+3. Create a new branch:
 
 ```bash
 git checkout -b feature/your-feature-name
 ```
 
-3. Make your changes
-4. Commit your changes
+4. Make your changes.
+
+5. Commit your changes:
 
 ```bash
 git commit -m "Add your feature"
 ```
 
-5. Push your branch
+6. Push your branch:
 
 ```bash
 git push origin feature/your-feature-name
 ```
 
-6. Open a Pull Request
+7. Open a Pull Request.
 
 All contributions are reviewed before being merged into the main project.
+
+---
 
 # Roadmap
 
 Some ideas for the future of Nanno:
 
-* [ ] Support more programming languages
-* [ ] Better error context collection
+* [ ] Support for more programming languages
+* [ ] Improved error context collection
 * [ ] Interactive debugging conversations
 * [ ] Project-aware debugging
 * [ ] Improved AI reasoning
@@ -142,35 +174,50 @@ Some ideas for the future of Nanno:
 * [ ] IDE integrations
 * [ ] Plugin system
 * [ ] Community knowledge base
+* [ ] Better debugging workflows
 
 Have an idea?
 
 Open an issue and let's discuss it.
 
+---
+
 # License
 
-Nanno is licensed under the GNU General Public License v3.0 (GPL-3.0).
+Nanno is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
-This means Nanno and its derivatives remain open source.
+This means that Nanno is free and open-source software.
 
-See the [LICENSE](LICENSE) file for more information.
+You are free to use, study, modify, and distribute the project under the terms of the GPL-3.0 license.
 
-# Creator
+Any distributed derivative work based on Nanno must also remain open source under the same GPL-3.0 license.
 
-Nanno was originally created by **Mooh** in 2026.
+See the [LICENSE](LICENSE) file for more details.
 
-I started Nanno with a simple idea:
+---
 
-What if AI debugging tools focused on teaching developers instead of simply fixing their code?
+# Creator & Founder
 
-Nanno is now open to the community.
+## Mooh
 
-If you believe in the idea, consider contributing.
+**Nanno was originally created, founded, and conceptualized by Mooh in 2026.**
 
-# Let's Build It Together
+The original idea and vision behind Nanno came from a simple question:
 
-Nanno is still at the beginning.
+> **What if AI debugging tools focused on helping developers understand their mistakes instead of simply fixing their code?**
 
-The goal is to build an open-source debugging companion that helps developers become better at understanding and solving problems.
+Nanno began as an independent project created by Mooh and is now being developed as an open-source project with contributions from the community.
 
-If that vision interests you, you're welcome to be part of it.
+While Nanno welcomes contributors and community involvement, the project's original concept, vision, and direction were established by its creator and founder.
+
+---
+
+# Join the Project
+
+Nanno is more than a CLI tool.
+
+It is an experiment in building AI tools that help developers **learn instead of becoming dependent on generated answers**.
+
+If you believe in that vision, you're welcome to contribute.
+
+Let's build Nanno together.
